@@ -1,0 +1,111 @@
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFBB3D;
+    overflow: hidden;
+    .menu-btn {
+        position: fixed;
+        top: 36px;
+        right: 26px;
+        width: 50px;
+        height: 13px;
+        box-shadow: 0px 2px 15px rgba(167, 40, 40, 0.14);
+        z-index: 999;
+        cursor: pointer;
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: -22px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #FFBB3D;
+            z-index: -1;
+        }
+        .first-line, .second-line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 4px;
+            background: #FFFFFF;
+        }
+        .second-line {
+            top: 9px;
+        } 
+    }
+    .title {
+        position: absolute;
+        left: 0;
+        bottom: 20%;
+        padding: 0 5% 20% calc(2vw + 4px);
+        opacity: 1;
+    }
+    .welcome {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-left: 4px solid #FFFFFF;
+        max-width: 360px;
+        h2 {
+            padding: 20px 0 20px 2vw;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+   header {
+    .title {
+        bottom: 0;
+        padding: 0 5% 10% calc(2vw + 4px);
+    }
+    .welcome {
+        width: 280px;
+    }
+   }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        .title {
+            padding: 0 5% 30% 5vw;
+            h1 {
+                font-size: 160px;
+                line-height: 160px;
+            }
+        }
+        .welcome {
+            right: 5vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        .title {
+            padding: 0 5% 10% 5vw;
+            h1 {
+                font-size: 180px;
+                line-height: 160px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        .title {
+            padding: 0 5% 8% 10vw;
+            h1 {
+                font-size: 220px;
+                line-height: 200px;
+            }
+        }
+        .welcome {
+            right: 10vw;
+        }
+    }
+}

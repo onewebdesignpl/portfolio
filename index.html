@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sławek Andrzejewski - portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/4dee54eee7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER STARTS HERE !  -->
+    <header>
+        <div class="menu-btn">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+        </div>
+
+        <div class="title">
+            <h1>MAKE<br>IT<br>SIMPLE.</h1>
+        </div>
+
+        <div class="welcome">
+            <h2>Cześć, mam na imię Sławek. Witam Cię w moim portfolio.</h2>
+        </div>
+    </header> 
+    <!-- HEADER ENDS HERE ! -->
+
+    <!-- SLIDER STARTS HERE ! -->
+    <main>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slider-card">
+                    <div class="card-image first-image"></div>
+                    <div class="card-data">
+                        <p>Aplikacja umożliwiająca szybkie odnajdywanie akordów podczas nauki gry na instrumencie. Projekt wykonałem w Figmie a do jego napisania wykożystałem React i Sass.</p>
+                        <div class="buttons-wrapper">
+                            <a href=""><i class="fab fa-github"></i></a>
+                            <button class="demo">DEMO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="card-image second-image"></div>
+                    <div class="card-data">
+                        <p>Statyczna strona internetowa zaprojektowana w Figmie a wykonana za pomocą Gatsby.js</p>
+                        <div class="buttons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <button class="demo">DEMO</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="slider-card">
+                    <div class="card-image third-image"></div>
+                    <div class="card-data"></div>
+                </div> -->
+            </div>
+            
+            <div class="slider-controls"></div>
+        </div>
+    </main>
+    <!-- SLIDER ENDS HERE ! -->
+
+    <!-- FOOTER STARTS HERE ! -->
+    <footer>
+        <div class="contact-item">
+            <a href="mailto:kontakt@onewebdesign.pl"><h1>kontakt@onewebdesign.pl</h1></a>
+            <div class="separator"></div>
+            <h1>tel. 731 085 622</h1>
+        </div>
+        <div class="contact-item flex-row">
+            <a href="https://www.facebook.com/wbseeds" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/slawomir-andrzejewski/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/onewebdesignpl" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS HERE -->
+
+    <!-- SCRIPTS FOR SLICK.JS  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/code.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.slider').slick({
+            appendArrows: $('.slider-controls')
+        });
+        });
+    </script>
+</body>
+</html>
