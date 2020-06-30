@@ -16,3 +16,11 @@ TweenMax.from(".welcome", 1.2, {
     ease: Expo.easeInOut
   })
 
+  //Menu Trigger
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('nav');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  }) 
+

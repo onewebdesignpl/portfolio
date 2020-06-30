@@ -45,6 +45,49 @@ header .menu-btn .second-line {
   top: 9px;
 }
 
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 20vw 3vw;
+  background-color: #3F7DCE;
+  z-index: 99;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header nav .name {
+  font-size: 26px;
+}
+
+header nav div {
+  margin: 3vw 0;
+}
+
+header nav h1 {
+  padding-bottom: 20px;
+  line-height: normal;
+}
+
+header nav h2 {
+  font-size: 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+header nav p {
+  line-height: 30px;
+}
+
+header nav.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 header .title {
   position: absolute;
   left: 0;
@@ -72,6 +115,9 @@ header .welcome h2 {
   }
   header .welcome {
     width: 280px;
+  }
+  header nav {
+    padding: 3vw 3vw;
   }
 }
 
@@ -155,7 +201,10 @@ main .slider-wrapper .slider .slider-card .second-image {
 }
 
 main .slider-wrapper .slider .slider-card .third-image {
-  background: greenyellow;
+  background: url(../img/teczowa.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #A1E6F5;
 }
 
 main .slider-wrapper .slider .slider-card .card-data {
@@ -171,8 +220,8 @@ main .slider-wrapper .slider .slider-card .card-data p {
 
 main .slider-wrapper .slider .slider-card .card-data div.buttons-wrapper {
   position: absolute;
-  bottom: 15px;
-  left: 10px;
+  bottom: 3.5vw;
+  left: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +230,11 @@ main .slider-wrapper .slider .slider-card .card-data div.buttons-wrapper {
           justify-content: center;
 }
 
-main .slider-wrapper .slider .slider-card .card-data div.buttons-wrapper i {
+main .slider-wrapper .slider .slider-card .card-data div.buttons-wrapper a {
+  color: #000;
+}
+
+main .slider-wrapper .slider .slider-card .card-data div.buttons-wrapper a i {
   font-size: 28px;
 }
 
@@ -251,8 +304,12 @@ main .slider-wrapper .slider-controls button.slick-next {
   main .slider-wrapper .slider .slider-card .card-image {
     position: relative;
     width: 100%;
-    height: 580px;
     background-position: center;
+  }
+  main .slider-wrapper .slider .slider-card .card-data p {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 20px;
   }
 }
 
@@ -265,6 +322,22 @@ main .slider-wrapper .slider-controls button.slick-next {
     width: 60%;
     height: 100%;
     background-position: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  main .slider-wrapper .slider .slider-card {
+    height: 60vh;
+  }
+  main .slider-wrapper .slider .slider-card .card-image {
+    position: relative;
+    width: 100%;
+    background-position: center;
+  }
+  main .slider-wrapper .slider .slider-card .card-data p {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 30px;
   }
 }
 
@@ -311,6 +384,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 40vh;
+  min-height: 200px;
   width: 100%;
   background-color: #2e2e2e;
 }
@@ -359,6 +433,8 @@ footer div.flex-row i {
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {

@@ -37,6 +37,39 @@ header {
             top: 9px;
         } 
     }
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 20vw 3vw;
+        background-color: #3F7DCE;
+        z-index: 99;
+        transform: translateX(100%);
+        transition: all .3s ease;
+        .name {
+            font-size: 26px;
+        }
+        div {
+            margin: 3vw 0;
+        }
+        h1 {
+            padding-bottom: 20px;
+            line-height: normal;
+        }
+        h2 {
+            font-size: 20px;
+            border: none;
+            text-transform: uppercase;
+        }
+        p {
+            line-height: 30px;
+        }
+    }
+    nav.active {
+        transform: translateX(0);
+    }
     .title {
         position: absolute;
         left: 0;
@@ -64,6 +97,9 @@ header {
     }
     .welcome {
         width: 280px;
+    }
+    nav {
+        padding: 3vw 3vw;
     }
    }
 }
